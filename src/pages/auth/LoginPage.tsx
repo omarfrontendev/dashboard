@@ -42,13 +42,7 @@ export function LoginPage() {
       } else {
         // TODO: Add super admin authentication logic
         navigate('/');
-        toast.success("Welcome back! You are logged in.",
-          {
-            action: {
-              label: "Undo",
-            },
-          }
-        );
+        toast.success("Welcome back! You are logged in.");
       }
     } catch (error) {
       toast.error("ERROR")
