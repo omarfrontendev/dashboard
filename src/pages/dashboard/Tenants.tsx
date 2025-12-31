@@ -5,12 +5,12 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
   Search,
-  Filter,
+  // Filter,
   Plus,
   Building2,
   Globe,
   CheckCircle,
-  AlertCircle,
+  // AlertCircle,
   Pause,
   MoreVertical,
   Eye,

@@ -9,13 +9,14 @@ import { LoginPage } from '@/pages/auth/LoginPage';
 import { ProtectedRoute } from '@/app/router/ProtectedRoute';
 import SuperAdminLayout from '@/layout/SuperAdminLayout';
 import Tenants from '@/pages/dashboard/Tenants';
+import type { ReactNode } from 'react';
 
 interface ModuleItem {
     icon: any;
     label: string;
     path: string;
     badge?: string | null;
-    element?: JSX.Element; // 💡 Component to render in router
+    element?: ReactNode; // 💡 Component to render in router
 }
 
 interface ModuleSection {

@@ -3,7 +3,6 @@ import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import {
     Crown,
-    LayoutDashboard,
     ChevronLeft,
     ChevronRight,
     LogOut,
@@ -11,7 +10,12 @@ import {
 } from 'lucide-react';
 import { modules } from '@/config/menu.config';
 
-export default function Sidebar({ collapsed, setCollapsed }) {
+interface SidebarProps {
+    collapsed: boolean;
+    setCollapsed: (value: boolean) => void;
+}
+
+export default function Sidebar({ collapsed, setCollapsed }: SidebarProps) {
     const location = useLocation();
 
     return (

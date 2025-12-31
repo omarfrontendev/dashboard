@@ -1,15 +1,15 @@
-import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useState, type ReactNode } from 'react';
+// import { Link, useLocation } from 'react-router-dom';
+// import { Button } from '@/components/ui/button';
+// import { Badge } from '@/components/ui/badge';
 import {
   Crown,
-  LayoutDashboard,
-  ChevronLeft,
-  ChevronRight,
-  LogOut,
+  // LayoutDashboard,
+  // ChevronLeft,
+  // ChevronRight,
+  // LogOut,
   Bell,
-  Search,
+  // Search,
 } from 'lucide-react';
 import { ThemeToggle } from './components/ThemeToggle';
 import { LanguageToggle } from './components/LanguageToggle';

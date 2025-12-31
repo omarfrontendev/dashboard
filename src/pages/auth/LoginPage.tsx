@@ -21,10 +21,11 @@ import {
 import { useDispatch } from 'react-redux';
 import { loginUser } from '@/app/store/features/auth/authThunk';
 import { toast } from 'sonner';
+import type { AppDispatch } from "@/app/store"; 
 
 export function LoginPage() {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
+  const dispatch = useDispatch<AppDispatch>();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
